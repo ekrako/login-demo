@@ -1,0 +1,8 @@
+<h2 class="page-header">Send OTP</h2>
+<form (submit)="onSendOtpSubmit()">
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" [(ngModel)]="mdn" name="mdn" class="form-control">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>

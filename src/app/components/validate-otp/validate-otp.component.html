@@ -1,0 +1,17 @@
+<h2 class="page-header">Validate OTP</h2>
+<form (submit)="onValidateOtpSubmit()">
+  <div class="form-group">
+    <label>Enter Password</label>
+    <input type="tel" [(ngModel)]="otp" name="otp" class="form-control">
+  </div>
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary" value="{{submitButtontext}}">
+  </div>
+  <div class="form-group" *ngIf="register=='Y'">
+    <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+      <p>
+        {{tos}}
+      </p>
+    </div>
+  </div>
+</form>

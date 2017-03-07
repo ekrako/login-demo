@@ -1,0 +1,14 @@
+<div *ngIf="accessToken" class="container">
+  <h2>Login Successfully</h2>
+  <p>
+    Access Token: {{accessToken}}
+  </p>
+  <h3>App Parameters</h3>
+  <p>
+    {{details}}
+  </p>
+  <div>
+    <a href="#" (click)="onLogoutClick()" class="btn btn-danger">Logout</a>
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="loader" *ngIf="!done">
+</div>
+<div class='container' *ngIf="done">
+  <div class="row">
+    <h2>Choose Login Option</h2>
+  </div>
+  <div class="row">
+    <a routerLink="/login" class="btn btn-primary btn-lg">Password</a>
+    <a routerLink="/sendotp" class="btn btn-primary btn-lg">Text Message</a>
+  </div>
+
+</div>
